@@ -8,7 +8,7 @@ const TabBar = ({ state, descriptors, navigation }) => {
   const { colors } = useTheme(); // Get theme colors
   const icons = {
     home: (props) => (
-      <Octicons name="home" size={22} color={Colors.PRIMARY} {...props} />
+      <Octicons name="home" size={21} color={Colors.PRIMARY} {...props} />
     ),
     explore: (props) => (
       <MaterialIcons
@@ -40,13 +40,12 @@ const TabBar = ({ state, descriptors, navigation }) => {
     <View
       style={{
         flexDirection: "row",
-        backgroundColor: colors.background,
+        backgroundColor: "#E8E8E8",
         padding: 12,
         position: "absolute",
         bottom: 20,
         flexDirection: "row",
         justifyContent: "center",
-        backgroundColor: Colors.WHITE,
         marginHorizontal: 20,
         paddingVertical: 5,
         borderRadius: 40,
