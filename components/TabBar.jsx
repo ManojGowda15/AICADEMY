@@ -43,7 +43,7 @@ const TabBar = ({ state, descriptors, navigation }) => {
         backgroundColor: "#E8E8E8",
         padding: 12,
         position: "absolute",
-        bottom: 20,
+        bottom: 10,
         flexDirection: "row",
         justifyContent: "center",
         marginHorizontal: 20,

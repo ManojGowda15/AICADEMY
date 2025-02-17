@@ -6,6 +6,10 @@ import { useRouter } from "expo-router";
 const NoCourse = () => {
   const router = useRouter();
 
+  const handleCreateCourse = () => {
+    router.push("/AddCourse/addCourse"); // Removed trailing slash
+  };
+
   return (
     <View style={styles.container}>
       <Image
@@ -15,10 +19,9 @@ const NoCourse = () => {
 
       <Text style={styles.descTitle}>You don't have any course</Text>
 
-      <Button
-        text={"+ Create New Course"}
-        onPress={() => router.push("/AddCourse")}
-      />
+      <Button text={"+ Create New Course"} onPress={() => {
+        router.push("/addCourse")
+      }} />
       <Button text={"Explore Existing Courses"} type="outline" />
     </View>
   );
